@@ -17,7 +17,8 @@ See the usage section for more details.
 
 ## Future Features
 Currently the plugin does not support loading templates via XHR requests
-on its own. Didn´t needed this by now, but support will be added in the future.
+on its own. 
+Didn´t needed this by now, but support will be added in the future.
 
 Same for selector based template retrival like marionette does for templates,
 hold on, i will cover this in the future.
