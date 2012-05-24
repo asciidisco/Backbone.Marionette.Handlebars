@@ -162,7 +162,7 @@ libraries:
 * Backbone.Marionette v0.8.4
 * Backbone v0.9.2
 * Underscore v1.3.3
-* Handlebars v1.0.0 alpha 6
+* Handlebars v1.0.5beta
 
 Backbone.Marionette.Handlebars has not been tested against any other versions of these
 libraries. You may or may not have success if you use a version other
