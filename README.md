@@ -24,10 +24,9 @@ Same for selector based template retrival like marionette does for templates,
 hold on, i will cover this in the future.
 
 Also, writing unit tests (like i always do for my projects, and so should you ;))
-is smth. i would like to add as soon as possible.
+is smth. i would like to add as soon as possible. With tests, there will be also an Travis CI integration.
 
-## Build Status, Project Page, Annotated Source & Tests
-[![Build Status](https://secure.travis-ci.org/asciidisco/Backbone.Marionette.Handlebars.png?branch=master)](http://travis-ci.org/asciidisco/Backbone.Marionette.Handlebars)<br /><br />
+## Project Page & Annotated Source
 [Project Page](http://asciidisco.github.com/Backbone.Marionette.Handlebars/index.html)<br />
 [Docs](http://asciidisco.github.com/Backbone.Marionette.Handlebars/docs/backbone.marionette.handlebars.html)<br />
 [NPM registry](http://search.npmjs.org/#/Backbone.Marionette.Handlebars)
@@ -180,11 +179,6 @@ but not limited to:
 
 The [Grunt](https://github.com/cowboy/grunt) project is used
 to generate the builds for Backbone.Marionette.Handlebars.
-
-### Travis CI
-
-Backbone.Marionette.Handlebars uses [Travis CI](http://travis-ci.org/) as a post commit hook,
-to ensure that it´s that the coding guidelines are passing using JSHint
 
 ### Annotated Source Code
 
