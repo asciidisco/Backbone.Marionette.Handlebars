@@ -27,7 +27,7 @@ Also, writing unit tests (like i always do for my projects, and so should you ;)
 is smth. i would like to add as soon as possible. With tests, there will be also an Travis CI integration.
 
 ## Build Status, Project Page & Annotated Source
-[![Build Status](https://secure.travis-ci.org/asciidisco/Backbone.Marionette.Handlebars.png?branch=master)](http://travis-ci.org/asciidisco/Backbone.Marionette.Handlebars)<br />
+[![Build Status](https://secure.travis-ci.org/asciidisco/Backbone.Marionette.Handlebars.png?branch=master)](http://travis-ci.org/asciidisco/Backbone.Marionette.Handlebars)<br /><br />
 [Project Page](http://asciidisco.github.com/Backbone.Marionette.Handlebars/index.html)<br />
 [Docs](http://asciidisco.github.com/Backbone.Marionette.Handlebars/docs/backbone.marionette.handlebars.html)<br />
 [NPM registry](http://search.npmjs.org/#/Backbone.Marionette.Handlebars)
