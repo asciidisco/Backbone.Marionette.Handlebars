@@ -29,7 +29,7 @@ is smth. i would like to add as soon as possible. With tests, there will be also
 ## Build Status, Project Page & Annotated Source
 [![Build Status](https://secure.travis-ci.org/asciidisco/Backbone.Marionette.Handlebars.png?branch=master)](http://travis-ci.org/asciidisco/Backbone.Marionette.Handlebars)<br /><br />
 [Project Page](http://asciidisco.github.com/Backbone.Marionette.Handlebars/index.html)<br />
-[Docs](http://asciidisco.github.com/Backbone.Marionette.Handlebars/docs/backbone.marionette.handlebars.html)<br />
+[Docs](http://docmaps.io/asciidisco/Backbone.Marionette.Handlebars/src/backbone.marionette.handlebars.js)<br />
 [NPM registry](http://search.npmjs.org/#/Backbone.Marionette.Handlebars)
 
 ## Installation
@@ -183,7 +183,8 @@ to generate the builds for Backbone.Marionette.Handlebars.
 
 ### Annotated Source Code
 
-I'm using [Docco](http://jashkenas.github.com/docco/) to generate the annotated source code.
+I'm using [Docco](http://jashkenas.github.com/docco/) to generate the annotated source code together
+with the great [DocMaps](http://docmaps.io) service.
 
 ## Release Notes (Changlog)
 
