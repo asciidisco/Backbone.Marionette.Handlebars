@@ -1,6 +1,10 @@
 Backbone.Marionette.Handlebars
 ==============================
 
+## Warning
+This plugin is not yet compatible with Backbone.Marionette 0.9.
+Expect a patch soon!
+
 Spice up your [Backbone.Marionette](https://github.com/derickbailey/backbone.marionette) application with some [handlebars](https://github.com/wycats/handlebars.js/) flavour
 
 This is a tiny library which overrides some of backbone.marionettes internal 
