@@ -1,10 +1,6 @@
 Backbone.Marionette.Handlebars
 ==============================
 
-## Warning
-This plugin is not yet compatible with Backbone.Marionette 0.9.
-Expect a patch soon!
-
 Spice up your [Backbone.Marionette](https://github.com/derickbailey/backbone.marionette) application with some [handlebars](https://github.com/wycats/handlebars.js/) flavour
 
 This is a tiny library which overrides some of backbone.marionettes internal 
@@ -166,10 +162,10 @@ documentation of Backbone.Marionette.Handlebars.
 Backbone.Marionette.Handlebars currently works with the following versions of these 
 libraries:
 
-* Backbone.Marionette v0.8.4
+* Backbone.Marionette v0.9.3
 * Backbone v0.9.2
 * Underscore v1.3.3
-* Handlebars v1.0.5beta
+* Handlebars v1.0.6beta
 
 Backbone.Marionette.Handlebars has not been tested against any other versions of these
 libraries. You may or may not have success if you use a version other
@@ -191,6 +187,9 @@ I'm using [Docco](http://jashkenas.github.com/docco/) to generate the annotated 
 with the great [DocMaps](http://docmaps.io) service.
 
 ## Release Notes (Changlog)
+
+### v0.1.0
++ Added support for Marionette 0.9
 
 ### v0.1.0
 + Initial realease

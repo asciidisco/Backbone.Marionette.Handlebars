@@ -70,7 +70,7 @@ module.exports = function(grunt) {
   });
 
   // Default task.
-  grunt.registerTask('default', 'lint qunit concat min');
-  grunt.registerTask('travis', 'qunit lint');
+  grunt.registerTask('default', 'lint concat min');
+  grunt.registerTask('travis', 'lint');
 
 };

@@ -1,6 +1,6 @@
 /*! Backbone.Marionette.Handlebars - v0.1.0
 ------------------------------
-Build @ 2012-05-24
+Build @ 2012-07-10
 Documentation and Full License Available at:
 http://asciidisco.github.com/Backbone.Marionette.Handlebars/index.html
 git://github.com/asciidisco/Backbone.Marionette.Handlebars.git
@@ -44,45 +44,17 @@ IN THE SOFTWARE.*/
         root.returnExportsGlobal = factory(root._, root.Backbone);
     }
 }(this, this.define, this.require, this.exports, this.module, function (_, Backbone, root, undef) {
-    'use strict';     
-    var oldGetTemplateSelector, oldTemplateCacheGet, oldRenderTemplate;
+    'use strict';
+    var oldRender;
 
-    oldGetTemplateSelector = Backbone.Marionette.View.prototype.getTemplateSelector;
-    Backbone.Marionette.View.prototype.getTemplateSelector = function () {
-        var template;
-
-        // Get the template from `this.options.template` or
-        // `this.template`. The `options` takes precedence.
-        if (this.options && this.options.template) {
-            template = this.options.template;
-        } else {
-            template = this.template;
-        }
-
-        // check if it's a handlebars template
+    oldRender = Backbone.Marionette.Renderer.render;
+    Backbone.Marionette.Renderer.render = function (template, data) {
         if (_.isObject(template) && template.type === 'handlebars') {
-            return template;
-        }
-
-        return _.bind(oldGetTemplateSelector, this)();
-    };
-
-    oldTemplateCacheGet = Backbone.Marionette.TemplateCache.get;
-    Backbone.Marionette.TemplateCache.get = function (template) {
-        // check if it's a handlebars template
-        if (_.isObject(template) && template.type === 'handlebars') {
-            return template;
-        }
-
-        return _.bind(oldTemplateCacheGet, this)(template);
-    };
-
-    oldRenderTemplate = Backbone.Marionette.Renderer.renderTemplate;
-    Backbone.Marionette.Renderer.renderTemplate = function (template, data) {
-        if (template !== null) {
             return template.template(data, template.options);
         }
+
+        return oldRender(template, data);
     };
 
     return Backbone.Marionette;
-}));    
+}));
