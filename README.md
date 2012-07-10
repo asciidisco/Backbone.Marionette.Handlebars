@@ -15,6 +15,12 @@ Currently i´ve only tested this within an requirejs based amd ecosystem,
 but it should also be working within a commonjs or vanilla js based project. 
 See the usage section for more details.
 
+## Backbone Marionette < 0.9.x
+If you need support for Backbone.Marionette versions lower then 0.9.x,
+please grab the plugin version that´s been tagged with v0.1.0 or download the
+0.1.0 zip archive from the downloads section.
+
+
 ## Future Features
 Currently the plugin does not support loading templates via XHR requests
 on its own. 
