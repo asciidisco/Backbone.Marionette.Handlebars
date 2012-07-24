@@ -1,6 +1,6 @@
-/*! Backbone.Marionette.Handlebars - v0.1.0
+/*! Backbone.Marionette.Handlebars - v0.2.0
 ------------------------------
-Build @ 2012-07-10
+Build @ 2012-07-24
 Documentation and Full License Available at:
 http://asciidisco.github.com/Backbone.Marionette.Handlebars/index.html
 git://github.com/asciidisco/Backbone.Marionette.Handlebars.git
@@ -50,7 +50,7 @@ IN THE SOFTWARE.*/
     oldRender = Backbone.Marionette.Renderer.render;
     Backbone.Marionette.Renderer.render = function (template, data) {
         if (_.isObject(template) && template.type === 'handlebars') {
-            return template.template(data, template.options);
+            return template.template(_.extend(data, template.data), template.options);
         }
 
         return oldRender(template, data);
