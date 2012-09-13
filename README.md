@@ -116,6 +116,18 @@ define([
 
 ```
 
+### Configuring globally with requirejs.config()
+
+You can optionally configure Backbone.Marionette.Handlebars to be loaded before all template
+views, which removes the need to depend on it in every single view. This ensures that the plugin
+can augment default Marionette templating behavior before any templates are required. Add the plugin
+to your requirejs.config().
+
+```javascript
+deps: [ "backbone.marionette.handlebars" ]
+```
+
+
 Please be aware of that the backbone.marionette.js file should be aliased
 as 'backbone.marionette' in the paths config for your require ecosystem.
 (Backbone.Marionette.Handlebars expects it to be referenced like this, when it requires it as
@@ -140,9 +152,15 @@ var MyView = Backbone.Marionette.ItemView.extend({
 ```
 
 Please be aware of that the backbone.marionette.js file should be aliased
-as 'backbone.marionette' in the paths config for your require ecosystem.
-(Backbone.Marionette.Handlebars expects it to be referenced like this, when it requires it as
-a dependency) 
+as 'backbone.marionette' in the [paths config](http://requirejs.org/docs/api.html#config-paths) 
+for your require ecosystem. (Backbone.Marionette.Handlebars expects it to be referenced like this,
+when it requires it as a dependency)
+
+```javascript
+paths: {
+    'backbone.marionette' : 'vendor/backbone.marionette'
+}
+```
 
 ## Support
 
