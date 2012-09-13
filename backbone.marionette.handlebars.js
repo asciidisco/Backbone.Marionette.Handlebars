@@ -31,9 +31,9 @@ IN THE SOFTWARE.*/
         // only CommonJS-like enviroments that support module.exports,
         // like Node.
         module.exports = factory(require('underscore'), require('backbone'), require('backbone.marionette'));
-    } else if (typeof define === 'function' && define.amd) {
-        // AMD. Register as an anonymous module.
-        define(['underscore', 'backbone', 'backbone.marionette'], function (_, Backbone) {
+    } else if (typeof require === 'function' && typeof define === 'function' && define.amd) {
+        // AMD. Require witn an asynchronous callback to override default globally.
+        require(['underscore', 'backbone', 'backbone.marionette'], function (_, Backbone) {
             // Check if we use the AMD branch of Backbone
             _ = _ === undef ? root._ : _;
             Backbone = Backbone === undef ? root.Backbone : Backbone;
