@@ -1,3 +1,6 @@
+# Warning
+> This plugin is unmaintained & obsolete: Please see [this issue](https://github.com/asciidisco/Backbone.Marionette.Handlebars/issues/7) & this [ST thread](http://stackoverflow.com/questions/19863285/using-precompiled-handlebars-templates-with-marionette#) if you want to use Handlebars templates with Marionette (and optional AMD)
+
 Backbone.Marionette.Handlebars
 ==============================
 
