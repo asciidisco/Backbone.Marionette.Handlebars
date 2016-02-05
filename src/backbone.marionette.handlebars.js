@@ -1,6 +1,6 @@
-(function (root, define, require, exports, module, factory, undef) {
+(function (root, factory) {
     'use strict';
-    if (typeof exports === 'object') {
+    if (typeof exports !== 'undefined') {
         // Node. Does not work with strict CommonJS, but
         // only CommonJS-like enviroments that support module.exports,
         // like Node.
@@ -17,7 +17,7 @@
         // Browser globals
         root.returnExportsGlobal = factory(root._, root.Backbone);
     }
-}(this, this.define, this.require, this.exports, this.module, function (_, Backbone, root, undef) {
+}(this, function (_, Backbone, root, undef) {
     'use strict';
     var oldRender;
 
